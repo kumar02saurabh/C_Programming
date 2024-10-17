@@ -45,3 +45,25 @@ int main (){
     
     return 0;
 }
+
+
+/*WAP  if number is 2^K,where n>0, than print YES other wise NO.  
+eg:input: 2, Output: Yes
+   input: 4, Output: Yes
+   input: 8, Output: Yes
+   input: 10, Output: No */
+
+
+  #include<stdio.h>
+  int main(){
+    int n;
+    printf("Enter a number:");
+    scanf("%d",&n);
+
+    if((n&(n-1))==0)
+      printf("YES");
+    
+    else
+      printf("NO");
+    return 0;
+  }
